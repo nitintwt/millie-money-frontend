@@ -55,6 +55,7 @@ function Landing() {
               <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">Features</a>
               <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">How it Works</a>
               <a href="#benefits" className="text-gray-600 hover:text-gray-900 transition-colors">Benefits</a>
+              <a href="#faq" className="text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
               <button 
                 className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
               >
@@ -65,8 +66,7 @@ function Landing() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-50 px-4 sm:px-6 lg:px-8">
+      <section className="pt-32 pb-40 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
@@ -268,7 +268,40 @@ function Landing() {
               </div>
             </div>
 
-                  <section id="faq" className="py-20">
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-medium">AI</span>
+                  </div>
+                  <div className="bg-gray-100 rounded-2xl px-4 py-2 max-w-xs">
+                    <p className="text-sm text-gray-800">I noticed you spent 23% more on dining out this month. Would you like some money-saving suggestions?</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-3 justify-end">
+                  <div className="bg-black rounded-2xl px-4 py-2 max-w-xs">
+                    <p className="text-sm text-white">Yes, please help me save money</p>
+                  </div>
+                  <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
+                </div>
+                
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-medium">AI</span>
+                  </div>
+                  <div className="bg-gray-100 rounded-2xl px-4 py-2 max-w-xs">
+                    <p className="text-sm text-gray-800">Here are 3 nearby restaurants with great reviews and lower prices. I can also help you set a dining budget goal.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -311,40 +344,8 @@ function Landing() {
         </div>
       </section>
 
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                    <span className="text-white text-sm font-medium">AI</span>
-                  </div>
-                  <div className="bg-gray-100 rounded-2xl px-4 py-2 max-w-xs">
-                    <p className="text-sm text-gray-800">I noticed you spent 23% more on dining out this month. Would you like some money-saving suggestions?</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3 justify-end">
-                  <div className="bg-black rounded-2xl px-4 py-2 max-w-xs">
-                    <p className="text-sm text-white">Yes, please help me save money</p>
-                  </div>
-                  <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
-                </div>
-                
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                    <span className="text-white text-sm font-medium">AI</span>
-                  </div>
-                  <div className="bg-gray-100 rounded-2xl px-4 py-2 max-w-xs">
-                    <p className="text-sm text-gray-800">Here are 3 nearby restaurants with great reviews and lower prices. I can also help you set a dining budget goal.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Ready to transform your finances?
@@ -353,7 +354,7 @@ function Landing() {
             Join thousands of users who've already discovered the power of AI-driven budgeting
           </p>
 
-          <div className="bg-gray-50 rounded-2xl p-8 max-w-md mx-auto">
+          <div className="bg-white rounded-2xl p-8 max-w-md mx-auto">
             <div className="space-y-4">
               <input
                 type="email"
